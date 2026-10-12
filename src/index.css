@@ -96,7 +96,6 @@ body {
 
 .ocean-bg {
   background: linear-gradient(180deg, #0a1929 0%, #0d2840 30%, #134e6f 70%, #1a6b94 100%);
-  position: relative;
   overflow: hidden;
 }
 
