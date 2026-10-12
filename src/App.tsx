@@ -117,7 +117,7 @@ function App() {
       />
 
       <div className="flex-1 flex flex-col h-screen relative z-10">
-        <header className="flex items-center justify-between px-6 py-3 border-b border-cyan-900/30 glass">
+        <header className="flex items-center justify-between px-6 py-3 border-b border-cyan-900/30" style={{ background: 'rgba(13, 40, 64, 0.45)', backdropFilter: 'blur(6px)' }}>
           <div className="flex items-center gap-2 text-sm text-cyan-300/50">
             <span>Product team</span>
             <ChevronRight size={14} />

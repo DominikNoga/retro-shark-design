@@ -3,12 +3,12 @@ import { useMemo } from 'react';
 export function OceanBackground() {
   const bubbles = useMemo(
     () =>
-      Array.from({ length: 20 }, (_, i) => ({
+      Array.from({ length: 35 }, (_, i) => ({
         id: i,
         left: `${Math.random() * 100}%`,
-        size: `${4 + Math.random() * 14}px`,
-        duration: `${8 + Math.random() * 12}s`,
-        delay: `${Math.random() * 10}s`,
+        size: `${4 + Math.random() * 18}px`,
+        duration: `${8 + Math.random() * 14}s`,
+        delay: `${Math.random() * 12}s`,
       })),
     [],
   );
@@ -36,21 +36,27 @@ export function OceanBackground() {
           }}
         />
       ))}
-      <div className="shark-swim" style={{ top: '15%' }}>
-        <svg width="48" height="24" viewBox="0 0 48 24" fill="currentColor" className="text-cyan-200">
+      <div className="shark-swim" style={{ top: '12%' }}>
+        <svg width="56" height="28" viewBox="0 0 48 24" fill="currentColor" className="text-cyan-200">
           <path d="M2 12 Q10 4, 24 8 L30 2 L30 10 Q38 12, 46 12 Q38 14, 30 14 L30 22 L24 16 Q10 20, 2 12 Z" />
           <circle cx="38" cy="11" r="1" fill="#0a1929" />
         </svg>
       </div>
-      <div className="shark-swim-reverse" style={{ top: '45%', animationDelay: '5s' }}>
-        <svg width="36" height="18" viewBox="0 0 48 24" fill="currentColor" className="text-teal-200">
+      <div className="shark-swim-reverse" style={{ top: '38%', animationDelay: '5s' }}>
+        <svg width="42" height="21" viewBox="0 0 48 24" fill="currentColor" className="text-teal-200">
           <path d="M2 12 Q10 4, 24 8 L30 2 L30 10 Q38 12, 46 12 Q38 14, 30 14 L30 22 L24 16 Q10 20, 2 12 Z" />
           <circle cx="38" cy="11" r="1" fill="#0a1929" />
         </svg>
       </div>
-      <div className="shark-swim" style={{ top: '70%', animationDelay: '12s', animationDuration: '35s' }}>
-        <svg width="28" height="14" viewBox="0 0 48 24" fill="currentColor" className="text-blue-200">
+      <div className="shark-swim" style={{ top: '62%', animationDelay: '12s', animationDuration: '35s' }}>
+        <svg width="34" height="17" viewBox="0 0 48 24" fill="currentColor" className="text-blue-200">
           <path d="M2 12 Q10 4, 24 8 L30 2 L30 10 Q38 12, 46 12 Q38 14, 30 14 L30 22 L24 16 Q10 20, 2 12 Z" />
+        </svg>
+      </div>
+      <div className="shark-swim-reverse" style={{ top: '82%', animationDelay: '8s', animationDuration: '32s' }}>
+        <svg width="38" height="19" viewBox="0 0 48 24" fill="currentColor" className="text-cyan-300">
+          <path d="M2 12 Q10 4, 24 8 L30 2 L30 10 Q38 12, 46 12 Q38 14, 30 14 L30 22 L24 16 Q10 20, 2 12 Z" />
+          <circle cx="38" cy="11" r="1" fill="#0a1929" />
         </svg>
       </div>
       {bubbles.map((b) => (

@@ -56,7 +56,7 @@ export function Sidebar({
   const initials = identity.split(' ').map((s) => s[0]).join('');
 
   return (
-    <aside className="glass flex flex-col w-64 h-screen border-r border-cyan-900/40 relative z-10">
+    <aside className="flex flex-col w-64 h-screen border-r border-cyan-900/40 relative z-10" style={{ background: 'rgba(13, 40, 64, 0.45)', backdropFilter: 'blur(6px)' }}>
       <div className="px-5 pt-5 pb-4">
         <div className="flex items-center gap-2">
           <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-teal-400 to-ocean-deep flex items-center justify-center shadow-lg shadow-teal-500/20">

@@ -101,7 +101,8 @@ export function BoardView({
           return (
             <section
               key={col.name}
-              className={`flex-1 min-w-[280px] max-w-[400px] flex flex-col rounded-2xl border ${tone.border} bg-ocean-dark/30 backdrop-blur-sm overflow-hidden`}
+              className={`flex-1 min-w-[280px] max-w-[400px] flex flex-col rounded-2xl border ${tone.border} overflow-hidden`}
+              style={{ background: 'rgba(13, 40, 64, 0.35)' }}
             >
               <div className={`px-4 py-3 border-b ${tone.border} bg-gradient-to-b ${tone.noteBg}`}>
                 <div className="flex items-center gap-2">

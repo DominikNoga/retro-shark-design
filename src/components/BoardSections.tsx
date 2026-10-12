@@ -111,7 +111,7 @@ export function PreviousRetro({ actions, setActions, notify }: PreviousRetroProp
 
   return (
     <div className="mb-3">
-      <div className="flex items-center gap-3 px-4 py-2.5 rounded-xl glass border border-cyan-900/30">
+      <div className="flex items-center gap-3 px-4 py-2.5 rounded-xl border border-cyan-900/30" style={{ background: 'rgba(13, 40, 64, 0.5)', backdropFilter: 'blur(6px)' }}>
         <History size={16} className="text-amber-400" />
         <strong className="text-sm text-cyan-100">Z poprzedniego retro</strong>
         <span className="text-xs text-cyan-300/50">
@@ -208,7 +208,7 @@ export function BriefingPanel({ show, onClose, onRefresh }: BriefingPanelProps) 
 
   return (
     <>
-      <section className="mb-3 rounded-xl glass border border-teal-500/20 p-4 slide-up relative overflow-hidden">
+      <section className="mb-3 rounded-xl border border-teal-500/20 p-4 slide-up relative overflow-hidden" style={{ background: 'rgba(13, 40, 64, 0.5)', backdropFilter: 'blur(6px)' }}>
         <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-teal-400/50 to-transparent shimmer-bg" />
         <div className="flex items-start gap-3">
           <div className="w-10 h-10 rounded-lg bg-teal-500/15 flex items-center justify-center shrink-0">

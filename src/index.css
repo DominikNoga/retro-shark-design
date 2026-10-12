@@ -111,9 +111,9 @@ body {
 .light-ray {
   position: absolute;
   top: -10%;
-  width: 120px;
+  width: 150px;
   height: 120%;
-  background: linear-gradient(180deg, rgba(173, 216, 230, 0.06) 0%, transparent 70%);
+  background: linear-gradient(180deg, rgba(173, 216, 230, 0.15) 0%, rgba(173, 216, 230, 0.04) 40%, transparent 70%);
   transform-origin: top center;
   animation: float-up 8s ease-in-out infinite;
   pointer-events: none;
@@ -122,8 +122,8 @@ body {
 .bubble {
   position: absolute;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.25), rgba(173, 216, 230, 0.08));
-  border: 1px solid rgba(255,255,255,0.1);
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.4), rgba(173, 216, 230, 0.12));
+  border: 1px solid rgba(255,255,255,0.15);
   animation: float-bubble linear infinite;
   pointer-events: none;
 }
@@ -132,7 +132,7 @@ body {
   position: absolute;
   font-size: 2rem;
   animation: swim 25s linear infinite;
-  opacity: 0.15;
+  opacity: 0.35;
   pointer-events: none;
 }
 
@@ -140,13 +140,13 @@ body {
   position: absolute;
   font-size: 2rem;
   animation: swim-reverse 30s linear infinite;
-  opacity: 0.12;
+  opacity: 0.28;
   pointer-events: none;
 }
 
 .glass {
-  background: rgba(13, 40, 64, 0.65);
-  backdrop-filter: blur(12px);
+  background: rgba(13, 40, 64, 0.5);
+  backdrop-filter: blur(8px);
   border: 1px solid rgba(26, 107, 148, 0.3);
 }
 
